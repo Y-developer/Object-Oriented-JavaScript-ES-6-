@@ -1,4 +1,4 @@
-var person = {
+const person = {
     personName : "Yasitha",
     birthDay : function(){
         return `Happy Birthday ${this.personName}!!!`; // use "this" keyword
