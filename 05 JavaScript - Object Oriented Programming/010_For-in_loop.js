@@ -5,6 +5,7 @@ const student = {
     physics : 70,
     chemistry : 80,
     maths : 60,
+    helloName : function(){return `Hello ${firstname}`}
 }
 
 for (let prop in student){
