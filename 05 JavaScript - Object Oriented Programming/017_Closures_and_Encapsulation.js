@@ -13,12 +13,12 @@ function bankAccount(){
         return accontBalance;
     }
 
-    return {deposit, withdrow, getAccountBalance};
+    return {dpo : deposit, withdrow, getAccountBalance};
 }
 
 const firstAccount = bankAccount();
 console.log(`First account initial balance Rs. ${firstAccount.getAccountBalance()}`)
-firstAccount.deposit(200);
+firstAccount.dpo(200);
 console.log(`First account balance after deposit Rs. ${firstAccount.getAccountBalance()}`);
 firstAccount.withdrow(50);
 console.log(`First account balance after withdrow Rs. ${firstAccount.getAccountBalance()}`);
@@ -27,7 +27,7 @@ console.log("");
 
 const secoundAccount = bankAccount();
 console.log(`Secound account initial balance Rs. ${secoundAccount.getAccountBalance()}`)
-secoundAccount.deposit(500);
+secoundAccount.dpo(500);
 console.log(`Secound account balance after deposit Rs. ${secoundAccount.getAccountBalance()}`);
 secoundAccount.withdrow(200);
 console.log(`Secound account balance after withdrow Rs. ${secoundAccount.getAccountBalance()}`);
