@@ -1,11 +1,11 @@
-function person(paraFirstName, paraLastName, paraAge){
+function Person(paraFirstName, paraLastName, paraAge){
     this.firstName = paraFirstName;
     this.lastName = paraLastName;
     this.age = paraAge;
 }
 
-function student(paraFirstName, paraLastName, paraAge, paraIndexNumber, paraGrade){
-    person.call(this,paraFirstName, paraLastName, paraAge);
+function Student(paraFirstName, paraLastName, paraAge, paraIndexNumber, paraGrade){
+    Person.call(this,paraFirstName, paraLastName, paraAge);
     this.indexNumber = paraIndexNumber;
     this.grade = paraGrade;
     this.isPassLastExam = function (){
@@ -13,7 +13,7 @@ function student(paraFirstName, paraLastName, paraAge, paraIndexNumber, paraGrad
     }
 }
 
-let student1 = new student("Smith","John",15,"136954R",11);
+let student1 = new Student("Smith","John",15,"136954R",11);
 
 console.log(student1);
 console.log(student1.isPassLastExam());
