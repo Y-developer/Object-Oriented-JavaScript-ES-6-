@@ -1,9 +1,11 @@
+// parent constructor function
 function Person(paraFirstName, paraLastName, paraAge){
     this.firstName = paraFirstName;
     this.lastName = paraLastName;
     this.age = paraAge;
 }
 
+// child constructor function
 function Student(paraFirstName, paraLastName, paraAge, paraIndexNumber, paraGrade){
     Person.call(this,paraFirstName, paraLastName, paraAge);
     this.indexNumber = paraIndexNumber;
