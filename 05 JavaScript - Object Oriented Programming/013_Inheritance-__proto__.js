@@ -14,6 +14,7 @@ const student = {
 
 student.__proto__ = person;
 
+console.log(student);
 console.log(`Full Name : ${student.firstName} ${student.lastName}`);
 console.log(`Age : ${student.age}`);
 console.log(`Index Number : ${student.indexNumber}`);
